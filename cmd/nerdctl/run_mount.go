@@ -271,6 +271,7 @@ func generateMountOpts(cmd *cobra.Command, ctx context.Context, client *containe
 	}
 
 	opts = append(opts, withMounts(userMounts))
+	fmt.Printf("Checking :%v",opts)
 	return opts, anonVolumes, nil
 }
 
